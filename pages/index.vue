@@ -27,7 +27,7 @@
 
         <div class="half">
 
-          <p>Other half</p>
+          <p>Other half </p>
 
         </div>
 
