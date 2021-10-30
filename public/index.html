@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+        <title>Olliver Persson</title>
+
+        <style>
+
+            body {
+
+                background: #f6f8fa;
+                margin: 0px;
+
+            }
+
+            * {
+
+                font-family: 'Lato', sans-serif; 
+                box-sizing: border-box;
+
+            }
+
+            header {
+
+                width: 100vw;
+                height: 100vh;
+                font-family: 'Roboto', sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            header div {
+
+                max-width: 600px;
+                padding: 25px;
+                text-align: center
+
+            }
+
+            h1, h2, h3, h4 {
+
+                font-family: 'Oswald', sans-serif;
+                font-weight: 400;
+
+            }
+
+            h1 {
+
+                font-size: 300%;
+
+            }
+
+            a {
+
+                color: black;
+                text-decoration: none;
+            }
+
+            .logga {
+
+                max-width: 300px;
+                border-radius: 200px;
+
+            }
+
+            .card {
+
+                background: white;
+                border-radius: 6px;
+                box-shadow: 1px 1px 15px rgba(0,0,0,0.07);
+                margin: 5px;
+                padding: 35px;
+                flex-grow: 1;
+                max-width: 250px;
+                border: 0.5px solid transparent;
+                transition: 0.4s;
+
+            }
+            
+            .card h3 {
+
+                margin-bottom: 0px;
+
+            }
+
+            .card .link-url {
+                
+                margin: 0px;
+                padding: 0px;
+                font-size: 70%;
+
+            }
+
+            a.card:hover {
+
+                box-shadow: 1px 1px 18px rgba(159, 148, 223, 0.6);
+                border: 0.5px solid rgba(159,148,223);
+
+            }
+
+            .socials {
+
+                display: flex;
+                justify-content: center;
+                padding: 25px 18px 55px 18px;
+                gap: 40px;
+                flex-wrap: wrap;
+
+            }
+
+            .socials > a {
+
+                flex-grow: 1;
+                max-width: 220px;
+                padding: 10px;
+                border-radius: 6px;
+                transition: border 0.4s;
+                border: 0.5px solid transparent;
+
+            }
+
+            .socials > a:hover {
+
+                border: 0.5px solid rgba(159,148,223);
+
+            }
+
+            .socials > a .socials-topbar {
+
+                display: flex;
+                justify-content: flex-start;
+                gap: 15px;
+                align-items: center;
+                padding: 10px 0px;
+
+            }
+
+            .socials > a .socials-topbar p {
+
+                text-decoration: none;
+
+            }
+
+            .socials p {
+
+                margin: 0px;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div>
+                            
+                <h1>Olliver Persson</h1> 
+
+            </div>
+
+        </header>
+
+        <section>
+
+            <div style="display: flex; flex-direction: row; justify-content: center; padding-bottom: 35px;">
+            
+                <div class="card" style="max-width: 450px; transform: rotate(3deg) translateY(-50px)">
+
+                    <h2>Hej!</h2>
+                    
+                    <p>Jag studerar till <b>civilingenjör</b> i <a href="https://globalasystem.se" target="_blank">Globala System</a> på Chalmers Tekniska Högskola i Göteborg. </p>
+                    
+                    <p>Under 2021 är jag <b>projektledare</b> för arbetsmarknadsmässan KARM21 som anordnas för fler än 1000 studenter vid kemisektionerna på Chalmers.
+                        
+                    <p>Jag flera års erfarenhet som <b>webbutvecklare</b> där jag bland annat skapat bokningssytem till flera företag och utvecklat webbappar hos Newtech IT AB. Jag har erfarenhet av ReactJS, VueJS, NodeJS, Firebase, C# .net Core och Google Cloud Platform.</p>
+
+                </div>
+
+            </div>
+
+            <p style="text-align: center">Nätverka med mig eller skicka ett mail!</p>
+
+            <div class="socials" style="display: flex; justify-content: center;">
+            
+                <a href="https://www.linkedin.com/in/olliver-persson/">
+                    
+                    <div class="socials-topbar">
+                        <img src="resources/icon-linkedin.svg">
+                        <p>LinkedIn</p>
+                    </div>
+
+                    <p>/in/olliverpersson</p>
+
+                </a>
+
+                <a href="mailto: olliver.persson@gmail.com">
+                    
+                    <div class="socials-topbar">
+                        <img src="resources/icon-mail.svg">
+                        <p>Email</p>
+                    </div>
+
+                    <p>olliver.persson@gmail.com</p>
+
+                </a>
+
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; padding: 35px; justify-content: center;">
+
+                <a class="card" href="https://pdf.olliverpersson.com" target="_blank">
+
+                    <img src="https://pdf.olliverpersson.com/icons/file-pdf-box.svg" style="min-width: 60px; max-width: 60px;"/>
+                    
+                    <h3>PDF Viewer</h3>
+                    <p class="link-url">https://pdf.olliverpersson.com</p>
+
+                    <p>Visningsprogram för pdf-filer. Öppna via url eller en lokal fil från datorn.</p>
+
+                </a>
+            
+                <a class="card" href="https://sliceonline.se" target="_blank">
+
+                    <img src="resources/icon-sliceonline.png" style="max-width: 60px;"/>
+                    
+                    <h3>Slice</h3>
+                    <p class="link-url">https://sliceonline.se</p>
+
+                    <p>Boknings- och beställningsplattform för restauranger. Integrerat med swish för enkla betalningar.</p>
+
+                </a>
+
+                <a class="card" href="https://ernstkarg.se/karm" target="_blank">
+
+                    <img src="resources/icon-ernstkarg.png" style="max-width: 60px;" />
+
+                    <h3>Karm 2021</h3>
+                    <p class="link-url">https://ernstkarg.se/karm</p>
+
+                    <p>Arbetsmarknadsmässa för mer än 1000 studenter på Chalmers Tekniska Högskola.</p>
+
+                </a>
+
+                <a class="card" href="http://sarasmusteri.se" target="_blank">
+
+                    <img src="resources/icon-sarasmusteri.png" style="max-width: 60px;" />
+
+                    <h3>Saras Musteri</h3>
+                    <p class="link-url">https://sarasmusteri.se</p>
+
+                    <p>Hemsida och bokningsystem till Saras Musteri, ett mobilt musteri i Småland.</p>
+
+                </a>
+
+            </div>
+
+            <p style="text-align: center; font-size: 10px; padding: 45px 0px;">Skapad av Olliver Persson. Drivs med förnybar energi.</p>
+
+        </section>
+
+    </body>
+
+</html>
